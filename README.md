@@ -1,3 +1,2 @@
-# JunxingHu.github.io
-
-This is my personal website.
+# zerchen.github.io
+personal website

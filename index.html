@@ -1,2 +1,210 @@
-<p>Hello, I am Junxing Hu.</p>
-<p>Welcome to my personal website.</p>
+
+<!doctype html>
+<html>
+
+<head>
+<title>Junxing Hu</title>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="keywords" content="Junxing Hu"> 
+<meta name="description" content="Junxing Hu's home page">
+<link rel="stylesheet" href="css/jemdoc.css" type="text/css" />
+
+<script>
+   function showPubs(id) {
+  if (id == 0) {
+    document.getElementById('pubs').innerHTML = document.getElementById('pubs_selected').innerHTML;
+    document.getElementById('select0').style = 'text-decoration:underline;color:#000000';
+    document.getElementById('select1').style = '';
+  } else {
+    document.getElementById('pubs').innerHTML = document.getElementById('pubs_by_topic').innerHTML;
+    document.getElementById('select1').style = 'text-decoration:underline;color:#000000';
+    document.getElementById('select0').style = '';
+  }
+}
+
+</script>
+
+</head>
+
+
+<body>
+
+<div id="layout-content" style="margin-top:25px">
+
+
+<table>
+	<tbody>
+		<tr>
+			<td width="75%">
+				<div id="toptitle">
+					<h1>Junxing Hu<h1>
+				</div>
+
+                <h3>Ph.D. Student</h3>
+
+		<p>
+                    Center for Research on Intelligent Perception and Computing (CRIPAC) </br>
+                    Institute of Automation, Chinese Academy of Sciences (CASIA) </br>
+                    School of Artificial Intelligence, University of
+Chinese Academy of Sciences </br>
+					</br>
+                    Email: junxing.hu@cripac.ia.ac.cn </br>
+		</p>
+		<p>
+			<a href="https://github.com/JunxingHu"><img src="assets/logos/github_logo.png" height="30px"></a>&nbsp;&nbsp;
+			<a href="https://scholar.google.com/citations?user=S-tx9_IAAAAJ&hl=en"><img src="assets/logos/google_logo.png" height="30px"></a>&nbsp;&nbsp;
+		</p>
+			</td>
+
+			</td>
+			<td width="25%">
+				<img src="assets/imgs/photo1.jpg" width="100%"/>
+			</td>
+		<tr>
+	</tbody>
+</table>
+
+
+<h2>Biography</h2> 
+
+<p>
+I am a Ph.D. student at <a href="http://english.ia.cas.cn/">CASIA</a> and <a href="https://ai.ucas.ac.cn/index.php/zh-cn/">University of Chinese Academy of Sciences</a>, where I work with <a href="http://www.cbsr.ia.ac.cn/users/znsun/">Prof. Zhenan Sun</a> and <a href="https://wylcasia.github.io/">Prof. Yunlong Wang</a> on 3D vision and biometrics. 
+<p>
+Before my Ph.D., I obtained my master's degree from the Institute of Software, Chinese Academy of Sciences (ISCAS) in 2020 and my bachelor's degree from the School of Software, Dalian University of Technology (DUT) in 2017.
+</p>
+
+<p id="publications">
+<h2>Publications
+    (<a href="" id="select0" onclick="showPubs(0); return false;">show selected</a> /
+     <a href="" id="select1" onclick="showPubs(1); return false;">show all</a>)
+</h2>
+</p>
+
+
+<div id="pubs"></div>
+<script id="pubs_selected">
+<!-- <ul>     -->
+
+    <div class="paper" style="clear:left;">
+        <div class="pimg" style="float:left;margin-bottom:10px;padding-left:3px;border-bottom:solid 1px #EEE;box-shadow:0 0px 2px">
+            <img src="assets/imgs/main_pipeline.jpg" width="200" >
+        </div>
+        <div class="ptitle" style="padding:1px;margin-left:215px;">
+          Learning Explicit Contact for Implicit Reconstruction of Hand-held Objects from Monocular Images
+        </div>
+        <div class="pauthors" style="padding:1px;margin-left:215px;">
+          <b>Junxing Hu</b>, Hongwen Zhang, Zerui Chen, Mengcheng Li, Yunlong Wang, Yebin Liu, Zhenan Sun
+        </div>
+        <div class="pvenue" style="padding:1px;margin-left:215px;">
+            Arxiv, 2023 
+            <p>
+            [<a href="https://junxinghu.github.io" target="_blank" rel="noopener">paper</a>]
+            [<a href="https://junxinghu.github.io/projects/HOI.html" target="_blank" rel="noopener">project</a>]
+            </p>
+        </div>
+      </div>
+
+    <div class="paper" style="clear:left;">
+      <div class="pimg" style="float:left;margin-bottom:10px;padding-left:3px;border-bottom:solid 1px #EEE;box-shadow:0 0px 2px">
+          <img src="assets/imgs/domain_transform.png" width="200" >
+      </div>
+      <div class="ptitle" style="padding:1px;margin-left:215px;">
+        Seg-Edge Bilateral Constraint Network for Iris Segmentation
+      </div>
+      <div class="pauthors" style="padding:1px;margin-left:215px;">
+        <b>Junxing Hu</b>, Hui Zhang, Jing Liu, Lihu Xiao, Xingguang Li, Zhaofeng He
+      </div>
+      <div class="pvenue" style="padding:1px;margin-left:215px;">
+          International Conference on Biometrics (<b>ICB</b>), 2019, (<b><font color="#FF0000">Best Student Paper</font>) </b> </br>
+          <p>
+          [<a href="https://ieeexplore.ieee.org/document/8987405" target="_blank" rel="noopener">paper</a>]
+          </p>
+      </div>
+    </div>
+<!-- </ul> -->
+</script></p>
+
+<script id="pubs_by_topic">
+<li>
+    A Large-scale Database for Less Cooperative Iris Recognition</br>
+    <b>Junxing Hu</b>, Leyuan Wang, Zhengquan Luo, Yunlong Wang, Zhenan Sun</br>
+    International Joint Conference on Biometrics (<b>IJCB</b>), 2021 </br>
+    [<a href="https://ieeexplore.ieee.org/document/9484357" target="_blank" rel="noopener">paper</a>]
+    [<a href="http://www.cripacsir.cn/dataset/casia-iris-degradation/" target="_blank" rel="noopener">project</a>]
+    <p></p>
+</li>
+
+<li>
+    Seg-Edge Bilateral Constraint Network for Iris Segmentation</br>
+    <b>Junxing Hu</b>, Hui Zhang, Jing Liu, Lihu Xiao, Xingguang Li, Zhaofeng He</br>
+    International Conference on Biometrics (<b>ICB</b>), 2019, (<b><font color="#FF0000">Best Student Paper</font>) </b> </br>
+    [<a href="https://ieeexplore.ieee.org/document/8987405" target="_blank" rel="noopener">paper</a>]
+    <p></p>
+</li>
+
+<li>
+    Light-Weight Edge Enhanced Network for On-orbit Semantic Segmentation</br>
+    <b>Junxing Hu</b>, Ling Li, Yijun Lin, Fengge Wu, Junsuo Zhao</br>
+    International Conference on Artificial Neural Networks (<b>ICANN</b>), 2019 </br>
+    [<a href="https://link.springer.com/chapter/10.1007/978-3-030-30484-3_27" target="_blank" rel="noopener">paper</a>]
+    <p></p>
+</li>
+
+<li>
+    A Comparison and Strategy of Semantic Segmentation on Remote Sensing Images</br>
+    <b>Junxing Hu</b>, Ling Li, Yijun Lin, Fengge Wu, Junsuo Zhao</br>
+    International Conference on Natural Computation, Fuzzy Systems and Knowledge Discovery (<b>ICNC-FSKD</b>), 2019</br>
+    [<a href="https://link.springer.com/chapter/10.1007/978-3-030-32456-8_3">paper</a>]
+    <p></p>
+</li>
+
+
+</script>
+
+<script>showPubs(0);</script>
+<script>var scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});</script>
+
+
+<h2>Honors</h2>
+
+<ul>
+    <li>
+        Best Student Paper Award, 2019</br>
+    </li>
+    <li>
+        National Scholarship for Postgraduate, 2019</br>
+    </li>
+    <li>
+        The First-Tier Scholarship, 2018-2019</br>
+    </li>
+    <li>
+        Outstanding Graduate of Liaoning Province, 2017</br>
+    </li>
+    <li>
+        Outstanding Graduate of University, 2017</br>
+    </li>
+    <li>
+        Outstanding Undergraduate Thesis Award, 2017</br>
+    </li>
+    <li>
+        National Scholarship, 2015</br>
+    </li>
+</ul>
+
+
+
+
+<table width="100%"> 
+  <tr> 
+		<td align="center">Last update: March 2023 | This template is borrowed from <a href="https://zerchen.github.io/">here</a>.</td>
+	</tr> 
+</table>
+
+</div>
+
+
+</body>
+
+</html>
+
