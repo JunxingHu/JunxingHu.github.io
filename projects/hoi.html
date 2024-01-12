@@ -16,9 +16,10 @@
         <div class="col-12">
           <!-- <h5 class="text-center">ECCV 2022</h5> -->
           <h2 class="text-center">Learning Explicit Contact for Implicit Reconstruction of Hand-held Objects from Monocular Images</h2>
-          <p class="text-center">&nbsp;</p>
-          <h6 class="text-center"><a href="https://junxinghu.github.io/">Junxing Hu<sup>1,2</sup></a>, <a href="https://hongwenzhang.github.io/">Hongwen Zhang<sup>3</sup></a>, <a href="https://zerchen.github.io/">Zerui Chen<sup>4</sup></a>, <a href="https://github.com/Dw1010/">Mengcheng Li<sup>3</sup></a>, <a href="https://wylcasia.github.io/">Yunlong Wang<sup>2</sup></a>, <a href="http://www.liuyebin.com/">Yebin Liu<sup>3</sup></a>, <a href="http://www.cbsr.ia.ac.cn/users/znsun/">Zhenan Sun<sup>1,2</sup></a></h6>
-          <p class="text-center"><sup>1</sup>University of Chinese Academy of Sciences, <sup>2</sup>CASIA, <sup>3</sup>Tsinghua University, <sup>4</sup>Inria</p>
+          <!-- <p class="text-center">&nbsp;</p> -->
+          <h6 class="text-center"></h6><p class="text-center"><font size="5">AAAI 2024</font></p></h6>
+          <h6 class="text-center"><a href="https://junxinghu.github.io/">Junxing Hu<sup>1,2</sup></a>, <a href="https://hongwenzhang.github.io/">Hongwen Zhang<sup>3</sup></a>, <a href="https://zerchen.github.io/">Zerui Chen<sup>4</sup></a>, <a href="https://github.com/Dw1010/">Mengcheng Li<sup>5</sup></a>, <a href="https://wylcasia.github.io/">Yunlong Wang<sup>2</sup></a>, <a href="http://www.liuyebin.com/">Yebin Liu<sup>5</sup></a>, <a href="http://www.cbsr.ia.ac.cn/users/znsun/">Zhenan Sun<sup>1,2</sup></a></h6>
+          <p class="text-center"><sup>1</sup>University of Chinese Academy of Sciences, <sup>2</sup>CASIA, <sup>3</sup>Beijing Normal University, <sup>4</sup>Inria, <sup>5</sup>Tsinghua University</p>
         </div>
       </div>
     </div>
@@ -36,10 +37,11 @@
   <div class="container ">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 text-center  offset-xl-0 col-xl-12">
-        <p class="text-left"><em>Reconstructing hand-held objects from monocular RGB images is an appealing yet challenging task. In this task, contacts between hands and objects provide important cues for recovering the 3D geometry of the hand-held objects. Though recent works have employed implicit functions to achieve impressive progress, they ignore formulating contacts in their frameworks, which results in producing less realistic object meshes. In this work, we explore how to model contacts in an explicit way to benefit the implicit reconstruction of hand-held objects. Our method consists of two components: <b>explicit contact prediction</b> and <b>implicit shape reconstruction</b>. In the first part, we propose a new subtask of directly estimating 3D hand-object contacts from a single image. The part-level and vertex-level graph-based transformers are cascaded and jointly learned in a coarse-to-fine manner for more accurate contact probabilities. In the second part, we introduce a novel method to diffuse estimated contact states from the hand mesh surface to nearby 3D space and leverage diffused contact probabilities to construct the implicit neural representation for the manipulated object. Benefiting from estimating the interaction patterns between the hand and the object, our method can reconstruct more realistic object meshes, especially for object parts that are in contact with hands. Extensive experiments on challenging benchmarks show that the proposed method outperforms the current state of the arts by a great margin.  </em></p>
+        <p class="text-left"><em>Reconstructing hand-held objects from monocular RGB images is an appealing yet challenging task. In this task, contacts between hands and objects provide important cues for recovering the 3D geometry of the hand-held objects. Though recent works have employed implicit functions to achieve impressive progress, they ignore formulating contacts in their frameworks, which results in producing less realistic object meshes. In this work, we explore how to model contacts in an explicit way to benefit the implicit reconstruction of hand-held objects. The proposed method <b>CHOI</b> consists of two components: <b>explicit contact prediction</b> and <b>implicit shape reconstruction</b>. In the first part, we propose a new subtask of directly estimating 3D hand-object contacts from a single image. The part-level and vertex-level graph-based transformers are cascaded and jointly learned in a coarse-to-fine manner for more accurate contact probabilities. In the second part, we introduce a novel method to diffuse estimated contact states from the hand mesh surface to nearby 3D space and leverage diffused contact probabilities to construct the implicit neural representation for the manipulated object. Benefiting from estimating the interaction patterns between the hand and the object, CHOI can reconstruct more realistic object meshes, especially for object parts that are in contact with hands. Extensive experiments on challenging benchmarks show that the proposed method outperforms the current state of the arts by a great margin.  </em></p>
         <p class="text-left">&nbsp;</p>
-		<h5 class="text-center">
+		    <h5 class="text-center">
           <a href="https://arxiv.org/abs/2305.20089">[arXiv]</a>
+          <a href="https://github.com/JunxingHu/CHOI">[Code]</a>
         </h5>
         <p class="text-left">&nbsp;</p>
 		<img src="./assets/main_pipeline.jpg" width="1080" alt="">
@@ -100,13 +102,20 @@
       <p>&nbsp;</p>
     </div> -->
     <hr>
+
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
-        <h2>Citation</h2>
+        <h2>BibTeX</h2>
       </div>
     </div>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-left">
-      <p><span style="color:#000000;font-family:&#39;Courier New&#39;;font-size:15px;"> Junxing Hu, Hongwen Zhang, Zerui Chen, Mengcheng Li, YunlongWang, Yebin Liu, Zhenan Sun. "Learning Explicit Contact for Implicit Reconstruction of Hand-held Objects from Monocular Images". arXiv 2023</span></p>
+      <pre><tt>
+      @InProceedings{hu2024learning,
+          title  = {Learning Explicit Contact for Implicit Reconstruction of Hand-held Objects from Monocular Images},
+          author = {Hu, Junxing and Zhang, Hongwen and Chen, Zerui and Li, Mengcheng and Wang, Yunlong and Liu, Yebin and Sun, Zhenan},
+          booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+          year = {2024},
+      }</tt></pre>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
